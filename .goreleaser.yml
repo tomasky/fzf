@@ -9,13 +9,12 @@ builds:
   - id: fzf-macos
     binary: fzf
     goos:
-      - darwin
+      - linux
     goarch:
       - amd64
     ldflags:
       - "-s -w -X main.version={{ .Version }} -X main.revision={{ .ShortCommit }}"
-    hooks:
-      post: gon .gon.hcl
+  
 
   - goos:
       - linux

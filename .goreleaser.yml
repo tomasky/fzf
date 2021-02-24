@@ -22,7 +22,7 @@ builds:
   
     goarch:
       - amd64
-      - i686
+      - i386
       - arm64
     goarm:
       - 5

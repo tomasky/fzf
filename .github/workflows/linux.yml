@@ -17,8 +17,12 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-        repository: 'junegunn/fzf'
-
+    - name: Merge Upstream
+      uses: exions/merge-upstream@v1
+      with:
+        upstream: junegunn/fzf      # set the upstream repo
+        upstream-branch: main   # set the upstream branch to merge from
+     
     - name: Set up Go
       uses: actions/setup-go@v2
       with:

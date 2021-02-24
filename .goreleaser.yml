@@ -51,7 +51,7 @@ archives:
 
 release:
   github:
-    owner: junegunn
+    owner: tomasky
     name: fzf
   prerelease: auto
   name_template: '{{ .Tag }}'
